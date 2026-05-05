@@ -4,9 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Static Pages | Morgan Keys</title>
+<style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #1d1d1d;
+      color: #fff;
+    }
+    .links {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: normal;
+    }
+    .links a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    
+    
+    @media (max-width: 640px) {
+      .home {
+        padding: 48px 24px;
+        gap: 64px;
+      }
+      .callout {
+        padding: 32px 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-<a href="n8n.morgankeys.com/index.html">n8n Personal App</a>
-<a href="ozzy/index.html">Ozzy AI</a>
+    <ul class="links">
+        <li><a href="n8n.morgankeys.com/index.html">n8n Personal App</a></li>
+        <li><a href="ozzy/index.html">Ozzy AI</a></li>
+    </ul>
 </body>
 </html>
