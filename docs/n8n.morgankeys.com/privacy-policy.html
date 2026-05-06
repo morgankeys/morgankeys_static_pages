@@ -36,7 +36,8 @@
     background: var(--color-surface); border-bottom: 1px solid var(--color-border);
     position: sticky; top: 0;
   }
-  header .title { font-size: var(--text-base); font-weight: 600; color: var(--color-primary); }
+  header .title { font-size: var(--text-base); font-weight: 600; color: var(--color-primary); text-decoration: none; }
+  header .title:hover { text-decoration: underline; }
   .theme-toggle {
     background: none; border: 1px solid var(--color-border); border-radius: var(--radius-md);
     padding: 6px 10px; cursor: pointer; color: var(--color-text); font-size: 14px;
@@ -65,7 +66,7 @@
 </head>
 <body>
 <header>
-  <span class="title">n8n Personal App</span>
+  <a class="title" href="index.html">n8n Personal App</a>
   <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌙</button>
 </header>
 <main class="container">

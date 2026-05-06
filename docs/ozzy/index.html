@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@300;400&family=Outfit:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Outfit:wght@800&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -60,21 +60,6 @@
         line-height: normal;
         text-align: center;
       }
-      .links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        font-family: "Lato", sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: normal;
-      }
-      .links a {
-        color: inherit;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-      }
       .callout {
         width: min(800px, 100%);
         background: #161616;
@@ -93,44 +78,20 @@
       .callout p + p {
         margin-top: 1.5em;
       }
-      .doc-section {
-        width: min(800px, 100%);
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
         font-family: "Inter", sans-serif;
-        color: #ccc;
-      }
-      .doc-section h2 {
-        margin: 0 0 16px;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-      .doc-section .meta {
-        margin: 0 0 20px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-      .doc-section .body-text {
-        margin: 0 0 20px;
+        font-weight: 300;
         font-size: 20px;
-        font-weight: "Regular";
-        line-height: 1.5;
+        line-height: normal;
       }
-      .doc-section .body-text:last-child {
-        margin-bottom: 0;
-      }
-      .doc-section p strong {
-        font-weight: 900;
-      }
-      .footer-note {
-        margin: 0;
-        width: min(800px, 100%);
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.5;
-        text-align: center;
-        color: #ccc;
+      .links a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
       }
       @media (max-width: 640px) {
         .home {
@@ -144,9 +105,9 @@
     </style>
   </head>
   <body>
-    <main class="home" data-node-id="29:341" data-name="home">
-      <header class="hero" data-node-id="28:338">
-        <div class="logo" data-node-id="28:332" data-name="Vector">
+    <main class="home">
+      <header class="hero">
+        <div class="logo">
           <img
             alt="Ozzy AI logo"
             src="logo.svg"
@@ -154,13 +115,13 @@
             height="304"
           />
         </div>
-        <h1 data-node-id="28:333">Ozzy AI</h1>
+        <h1>Ozzy AI</h1>
       </header>
 
-      <section class="callout" data-node-id="34:27" aria-label="About this application">
-        <div data-node-id="34:28">
+      <section class="callout" aria-label="About this application">
+        <div>
           <p>
-            This application is a personal automation tool operated solely by its developer for their own private use.
+            Ozzy is a personal AI assistant operated solely by its developer for their own private use.
           </p>
           <p>
             No other users have access to this application, and no third-party data is collected, stored, or shared.
@@ -168,40 +129,9 @@
         </div>
       </section>
 
-      <section class="doc-section" data-node-id="34:30" aria-labelledby="privacy-heading">
-        <h2 id="privacy-policy">Privacy Policy</h2>
-        <p class="meta">Last updated: May 2026</p>
-        <p class="body-text">
-          This app is a personal-use automation tool built with n8n. It is not intended for public access and has no registered users other than the developer.
-        </p>
-        <p class="body-text">
-          <strong>Data collection:</strong> This application does not collect, process, or store any personal data from third parties. Any data processed by this app belongs solely to the developer and is used only to automate personal tasks.
-        </p>
-        <p class="body-text">
-          <strong>Third-party services:</strong> This app connects to Google APIs (e.g., Gmail, Drive, Sheets) exclusively through the developer's own Google account using OAuth. No data is shared with any other party.
-        </p>
-        <p class="body-text">
-          <strong>Cookies &amp; tracking:</strong> This application uses no cookies, analytics, or tracking of any kind.
-        </p>
-        <p class="body-text">
-          <strong>Contact:</strong> As this is a private personal tool, there is no public contact method. The developer is the sole operator and user.
-        </p>
-      </section>
-
-      <section class="doc-section" data-node-id="34:31" aria-labelledby="terms-heading">
-        <h2 id="terms-of-service">Terms of Service</h2>
-        <p class="meta">Last updated: May 2026</p>
-        <p class="body-text">
-          This application is a private automation tool. Access is restricted exclusively to the developer. By definition, no other users are permitted to use this application.
-        </p>
-        <p class="body-text">
-          There are no warranties, guarantees, or liabilities associated with this tool beyond those applicable to personal software projects.
-        </p>
-      </section>
-
-      <p class="footer-note" data-node-id="34:32">
-        This is a personal-use application. Not intended for public access.
-      </p>
+      <div class="links">
+        <a href="policy.html">Privacy Policy &amp; Terms of Service</a>
+      </div>
     </main>
   </body>
 </html>
